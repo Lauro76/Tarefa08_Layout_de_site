@@ -1,17 +1,20 @@
+import styles from "./Footer.module.css";
+
 function Footer() {
   return (
-    <footer style={{
-      textAlign: 'center',
-      backgroundColor: 'crimson',
-      color: 'white',
-      padding: '20px 0',
-      marginTop: '30px',
-      boxShadow: '0 -2px 6px rgba(0,0,0,0.15)'
-    }}>
-      <p>© 2025 - Desenvolvido por [Lauro Cobo Junior] & [Guilherme Bonfim]</p>
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <h3>Technology S.A © 2025</h3>
+        <p>Desenvolvido por:</p>
+        <ul>
+          <li><strong>Lauro Cobo Junior</strong> — lauro.cobo@etec.sp.gov.br</li>
+          <li><strong>Guilherme Bonfim do Santos</strong> — guilherme.santos1641@etec.sp.gov.br</li>
+        </ul>
+      </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
+
 
